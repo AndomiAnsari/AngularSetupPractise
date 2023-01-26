@@ -10,7 +10,7 @@
           <th>Title</th>
           <th>Status</th>
           <th>Position</th>
-          <th>Actions</th>
+          <th>Details</th>
         </tr>
       </thead>
       <tbody>
@@ -26,13 +26,13 @@
             </div>
           </td>
           <td>
-            <p class="fw-normal mb-1">Software engineer</p>
-            <p class="text-muted mb-0">IT department</p>
+            <p class="fw-normal mb-1">Birthdate__:{{users.birthDate}}</p>
+            <p class="text-muted mb-0">Gender__:{{users.gender}}</p>
           </td>
           <td>
             <span class="badge badge-success rounded-pill d-inline">Active</span>
           </td>
-          <td>Senior</td>
+          <td>{{users.domain}}</td>
           <td>
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
