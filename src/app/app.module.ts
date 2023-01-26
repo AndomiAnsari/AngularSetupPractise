@@ -19,7 +19,7 @@ import { CarouselComponent } from './component/carousel/carousel.component';
 import { CardComponent } from './component/card/card.component';
 import { BlogComponent } from './pages/blog/blog.component'
 import { HttpClientModule } from '@angular/common/http';
-
+import { TableComponent } from './component/table/table.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
     CarouselComponent,
     CardComponent,
     BlogComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,18 +1,10 @@
-<!-- <p>card works!</p> -->
-<div class="swiper">
-  <span slot="container-start">Container Start</span>
-  <div class="swiper-wrapper">
-    <span slot="wrapper-start">Wrapper Start</span>
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <span slot="wrapper-end">Wrapper End</span>
-  </div>
-  <span slot="container-end">Container End</span>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-3" *ngFor="let products of products">
-      <div class="card">
+<section class="prodcut">
+  <h1 class="center"> Products </h1>
+
+
+  <div class="product__iner">
+    <div class="product__cards" *ngFor="let products of products">
+      <div class="product__card">
         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
           <img src="{{products.thumbnail}}" class="img-fluid" />
           <a href="#!">
@@ -29,12 +21,5 @@
   </div>
 
 
-</div>
 
-
-<p>fetch-data-from-api works!</p>
-<ul>
-  <li>
-
-  </li>
-</ul>
+</section>

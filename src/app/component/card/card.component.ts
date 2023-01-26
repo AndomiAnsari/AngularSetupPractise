@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { DummyJsonService } from 'src/app/services/dummy-json.service';
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+  styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
   products: any;
@@ -13,5 +14,6 @@ export class CardComponent {
       this.products = data.products;
     });
   }
+
 
 }

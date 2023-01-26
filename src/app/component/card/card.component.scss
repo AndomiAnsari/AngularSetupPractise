@@ -1,0 +1,25 @@
+.prodcut {
+  overflow: scroll;
+
+  .product__iner {
+    display: inline-flex;
+  }
+
+  .product__card {
+    width: 400px;
+    margin: 10px;
+
+
+  }
+
+  .img-fluid {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  h1.center {
+    text-align: center;
+    margin: 20px 0px;
+  }
+
+}
