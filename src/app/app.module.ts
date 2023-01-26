@@ -13,7 +13,10 @@ import {
   NgbPaginationModule,
   NgbAlertModule,
 } from '@ng-bootstrap/ng-bootstrap';
-import { NgbAlert } from '@ng-bootstrap/ng-bootstrap'
+import { NgbAlert } from '@ng-bootstrap/ng-bootstrap';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { CarouselComponent } from './component/carousel/carousel.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +25,8 @@ import { NgbAlert } from '@ng-bootstrap/ng-bootstrap'
     HomeComponent,
     AboutComponent,
     ContactComponent,
+    PageNotFoundComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
