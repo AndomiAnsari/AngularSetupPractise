@@ -1,0 +1,40 @@
+<!-- <p>card works!</p> -->
+<div class="swiper">
+  <span slot="container-start">Container Start</span>
+  <div class="swiper-wrapper">
+    <span slot="wrapper-start">Wrapper Start</span>
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <span slot="wrapper-end">Wrapper End</span>
+  </div>
+  <span slot="container-end">Container End</span>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-3" *ngFor="let products of products">
+      <div class="card">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+          <img src="{{products.thumbnail}}" class="img-fluid" />
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{products.title}}</h5>
+          <p class="card-text">{{products.description}}</p>
+          <a href="#!" class="btn btn-primary">Button</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<p>fetch-data-from-api works!</p>
+<ul>
+  <li>
+
+  </li>
+</ul>

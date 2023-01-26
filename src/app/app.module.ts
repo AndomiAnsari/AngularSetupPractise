@@ -15,7 +15,11 @@ import {
 } from '@ng-bootstrap/ng-bootstrap';
 import { NgbAlert } from '@ng-bootstrap/ng-bootstrap';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
-import { CarouselComponent } from './component/carousel/carousel.component'
+import { CarouselComponent } from './component/carousel/carousel.component';
+import { CardComponent } from './component/card/card.component';
+import { BlogComponent } from './pages/blog/blog.component'
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -27,6 +31,8 @@ import { CarouselComponent } from './component/carousel/carousel.component'
     ContactComponent,
     PageNotFoundComponent,
     CarouselComponent,
+    CardComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +41,7 @@ import { CarouselComponent } from './component/carousel/carousel.component'
     NgbPaginationModule,
     NgbAlertModule,
     NgbAlert,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
