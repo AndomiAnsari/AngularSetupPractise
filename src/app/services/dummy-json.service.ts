@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DummyJsonService {
-
   userUrl = 'https://dummyjson.com/users';
   url = 'https://dummyjson.com/products';
   // addUserApi ='https://dummyjson.com/users/add'

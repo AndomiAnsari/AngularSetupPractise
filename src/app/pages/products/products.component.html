@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="card">
+    <div class="container-fliud">
+      <div class="wrapper row">
+        <div class="preview col-md-6">
+
+          <div class="preview-pic tab-content">
+            <div class="tab-pane active" id="pic-1" *ngFor="let composant of specificProduct.images">
+              <img src="{{composant}}" />
+            </div>
+
+          </div>
+          <ul class="preview-thumbnail nav nav-tabs">
+            <li class="active" *ngFor="let composant of specificProduct.images"><a data-target="#pic-1"
+                data-toggle="tab">
+                <img src="{{composant}}" /></a></li>
+
+          </ul>
+
+        </div>
+        <div class="details col-md-6">
+          <h3 class="product-title">{{specificProduct.title}}</h3>
+          <div class="rating">
+            <div class="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <span class="review-no">{{specificProduct.rating}} Rating</span>
+            <br>
+            <span class="review-no"><strong>Brand: </strong>{{specificProduct.brand}}</span>
+            <br>
+            <span class="review-no"><strong>Stock: </strong>{{specificProduct.stock}}</span>
+          </div>
+          <p class="product-description">{{specificProduct.description}}</p>
+          <h4 class="price">current price: <span>{{specificProduct.price}}</span></h4>
+          <h4 class="vote">Discount Percentage: <span>%{{specificProduct.discountPercentage}}</span></h4>
+          <!-- <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p> -->
+
+
+          <div class="action">
+            <button class="add-to-cart btn btn-default" type="button" routerLink="/cart/{{specificProduct.id}}">add to cart</button>
+            <!-- <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
